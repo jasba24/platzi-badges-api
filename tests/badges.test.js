@@ -19,6 +19,28 @@ describe('GET badges', () => {
       .expect(200)
       .expect('Content-Type', /application\/json/)
   })
+  test('if there are three badges', async () => {
+    const response = await api.get('/api/badges')
+    expect(response.body).toHaveLength(initialBadges.length)
+  })
+})
+
+describe('POST badges', () => {
+  test('add new badge', async () => {
+    const newBadge = {
+      firstName: 'Test',
+      lastName: 'Test',
+      email: 'test@test.com',
+      jobTitle: 'Test',
+      twitter: 'Test',
+      avatarUrl: 'Test'
+    }
+    await api
+      .post('/api/badges')
+      .send(newBadge)
+      .expect(201)
+      .expect('Content-Type', /application\/json/)
+  })
 })
 
 afterAll(async () => {

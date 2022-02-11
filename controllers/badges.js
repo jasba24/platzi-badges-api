@@ -9,7 +9,7 @@ badgeRouter.get('/', async (req, res) => {
 badgeRouter.post('/', async (req, res) => {
   const badge = new Badge(req.body)
   const savedBadge = await badge.save()
-  res.json(savedBadge)
+  res.status(201).json(savedBadge)
 })
 
 module.exports = badgeRouter
