@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/badges
+Content-Type: application/json
+
+{
+  "firstName": "Garland",
+  "lastName": "Nikolaus",
+  "email": "Hazle_Botsford@hotmail.com",
+  "jobTitle": "Human Implementation Analyst",
+  "twitter": "GarlandNikolaus15225",
+  "avatarUrl":
+    "https://www.gravatar.com/avatar/c9697599c671bfd01b1366da66645659?d=identicon"
+}
