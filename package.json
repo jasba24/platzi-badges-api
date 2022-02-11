@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test PORT=1234 jest --silent tests/badges.test.js"
+    "test": "NODE_ENV=test PORT=1234 jest tests/badges.test.js"
   },
   "keywords": [],
   "author": "Sebastian Buitrago <johanbuitrago342@gmail.com>",
@@ -19,7 +19,7 @@
     "mongoose-unique-validator": "2.0.3"
   },
   "devDependencies": {
-    "jest": "27.0.6",
+    "jest": "^27.5.1",
     "nodemon": "2.0.12",
     "standard": "16.0.3",
     "supertest": "6.1.4"
@@ -31,6 +31,9 @@
     }
   },
   "jest": {
+    "testMatch": [
+      "<rootDir>/tests/*.test.js"
+    ],
     "testEnvironment": "node"
   }
 }
