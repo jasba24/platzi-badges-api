@@ -12,6 +12,13 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+app.get("/", () => {
+  return `
+    <h1>GET  <a href="/api/badges"></a></h1>
+    <h1>POST <a href="/api/badges"></a></h1>
+  `
+})
+
 app.use('/api/badges', badgesRouter)
 app.use(HandlerError)
 app.use(NotFound)
