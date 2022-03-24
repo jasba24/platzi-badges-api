@@ -1,4 +1,4 @@
-POST http://localhost:3001/api/badges
+POST https://platzi-badges-api.herokuapp.com/api/badges
 Content-Type: application/json
 
 {

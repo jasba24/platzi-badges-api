@@ -1,0 +1,1 @@
+GET https://platzi-badges-api.herokuapp.com/api/badges
