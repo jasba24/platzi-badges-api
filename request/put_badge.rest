@@ -1,0 +1,12 @@
+PUT https://platzi-badges-api.herokuapp.com/api/badges/6206df7f5a9d6e4c684679bd
+Content-Type: application/json
+
+{
+  "firstName": "Garland",
+  "lastName": "Nikolas",
+  "email": "Hazle_Botsford@hotmail.com",
+  "jobTitle": "Human Implementation Analyst",
+  "twitter": "GarlandNikolaus15225",
+  "avatarUrl":
+    "https://www.gravatar.com/avatar/c9697599c671bfd01b1366da66645659?d=identicon"
+}
