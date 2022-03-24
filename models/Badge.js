@@ -1,6 +1,9 @@
 const { Schema, model } = require('mongoose')
 
 const badgeSchema = new Schema({
+  id: {
+    type: Schema.Types.ObjectId
+  },
   firstName: String,
   lastName: String,
   email: String,
