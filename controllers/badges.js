@@ -6,6 +6,12 @@ badgeRouter.get('/', async (req, res) => {
   res.json(badges)
 })
 
+badgeRouter.get('/:id', async (req, res) => {
+  const id = req.params.id
+  const badge = await Badge.findById(id)
+  res.json(badge)
+})
+
 badgeRouter.post('/', async (req, res) => {
   const badge = new Badge(req.body)
   const savedBadge = await badge.save()
@@ -16,9 +22,11 @@ badgeRouter.put('/:id', async (req, res, next) => {
   const id = req.params.id
   const newBadge = req.body
 
-  Badge.findByIdAndUpdate(id, newBadge, {new: true}).then(result => {
-    res.json(result)
-  }).catch(err => next(err))
+  Badge.findByIdAndUpdate(id, newBadge, { new: true })
+    .then(result => {
+      res.json(result)
+    })
+    .catch(err => next(err))
 })
 
 badgeRouter.delete('/:id', async (req, res, next) => {
