@@ -1,12 +1,12 @@
-POST https://platzi-badges-api.herokuapp.com/api/badges
+POST http://localhost:3000/api/badges/create
 Content-Type: application/json
 
 {
-  "firstName": "Garland",
-  "lastName": "Nikolaus",
-  "email": "Hazle_Botsford@hotmail.com",
-  "jobTitle": "Human Implementation Analyst",
-  "twitter": "GarlandNikolaus15225",
-  "avatarUrl":
-    "https://www.gravatar.com/avatar/c9697599c671bfd01b1366da66645659?d=identicon"
+  "_id": "2de30c429deb40fca41f05e6",
+  "firstName": "Fredmeidemdeda",
+  "lastName": "Grady",
+  "email": "Leann_Berge@gmail.com",
+  "jobTitle": "Legacy Brand Director",
+  "twitter": "FredaGrady22221-7573",
+  "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
 }

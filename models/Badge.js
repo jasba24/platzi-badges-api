@@ -1,8 +1,8 @@
-const { Schema, model } = require('mongoose')
+import mongoose from 'mongoose'
 
-const badgeSchema = new Schema({
+const badgeSchema = new mongoose.Schema({
   id: {
-    type: Schema.Types.ObjectId
+    type: mongoose.Schema.Types.ObjectId
   },
   firstName: String,
   lastName: String,
@@ -12,14 +12,14 @@ const badgeSchema = new Schema({
   avatarUrl: String
 })
 
-badgeSchema.set('toJSON', {
-  transform: (document, returnedObject) => {
-    returnedObject.id = returnedObject._id
-    delete returnedObject._id
-    delete returnedObject.__v
-  }
-})
+// badgeSchema.set('toJSON', {
+//   transform: (document, returnedObject) => {
+//     returnedObject.id = returnedObject._id
+//     delete returnedObject._id
+//     delete returnedObject.__v
+//   }
+//})
 
-const Badge = model('Badge', badgeSchema)
+const Badge = mongoose.model('Badge', badgeSchema)
 
-module.exports = Badge
+export default Badge

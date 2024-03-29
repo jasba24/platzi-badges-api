@@ -1,1 +1,1 @@
-GET https://platzi-badges-api.herokuapp.com/api/badges
+GET http://localhost:3000/api/badges/getAll
