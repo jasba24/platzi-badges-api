@@ -7,22 +7,19 @@ import NotFound from './middleware/NotFound.js'
 import route from './router/routes.js'
 import bodyParser from 'body-parser'
 
-
 const app = express()
 
 app.use(cors())
 app.use(bodyParser.json())
 dotenv.config()
 
-const { MONGO_DB_URI, PORT } = process.env
-const port = PORT || 3000
-const connectionString =  MONGO_DB_URI
-
 mongoose
-  .connect(connectionString)
+  .connect(process.env.MONGO_DB_URI)
   .then(() => {
     console.log('DB connected')
-    app.listen(port, () => console.log(`Server running on port ${PORT}`))
+    app.listen(process.env.PORT || 3000, () =>
+      console.log(`Server running on port ${PORT}`)
+    )
   })
   .catch(err => console.log(err))
 
