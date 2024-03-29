@@ -4,6 +4,6 @@ API for platzi-badges project
 
 ## Endpoints:
 
-**POST**  /api/badges
+**POST**  /api/badges/create
 
-**GET** /api/badges
+**GET** /api/badges/home
