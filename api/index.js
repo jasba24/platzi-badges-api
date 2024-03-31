@@ -13,11 +13,13 @@ app.use(cors())
 app.use(bodyParser.json())
 dotenv.config()
 
+const PORT = process.env.PORT || 3005
+
 mongoose
   .connect(process.env.MONGO_DB_URI)
   .then(() => {
     console.log('DB connected')
-    app.listen(process.env.PORT || 3000, () =>
+    app.listen(PORT, () =>
       console.log(`Server running on port ${PORT}`)
     )
   })
