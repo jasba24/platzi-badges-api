@@ -25,3 +25,5 @@ yarn-error.log*
 models.json
 package-lock.json
 desktop.ini
+api.js
+.vercel

@@ -2,9 +2,9 @@ import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import express from 'express'
 import cors from 'cors'
-import HandlerError from './middleware/HandlerError.js'
-import NotFound from './middleware/NotFound.js'
-import route from './router/routes.js'
+import HandlerError from '../middleware/HandlerError.js'
+import NotFound from '../middleware/NotFound.js'
+import route from '../router/routes.js'
 import bodyParser from 'body-parser'
 
 const app = express()

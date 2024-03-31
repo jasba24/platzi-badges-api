@@ -1,1 +1,1 @@
-GET http://localhost:3000/api/badges/getAll
+GET https://platzi-badges-g6psvvi8j-jasba24s-projects.vercel.app/api/badges/getAll
