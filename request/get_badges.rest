@@ -1,1 +1,1 @@
-GET https://platzi-badges-api-lime.vercel.app/api/badges/getAll
+GET https://platzi-badges-api-kdhv.onrender.com/api/badges/getAll

@@ -1,2 +1,2 @@
-DELETE https://platzi-badges-api.herokuapp.com/api/badges/6206df7f5a9d6e4c684679bd
+DELETE https://platzi-badges-api-kdhv.onrender.com/api/badges/6206df7f5a9d6e4c684679bd
 Content-Type: application/json

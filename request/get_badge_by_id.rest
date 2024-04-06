@@ -1,1 +1,1 @@
-GET https://platzi-badges-api.herokuapp.com/api/badges/623cf7aebe3448001693854a
+GET https://platzi-badges-api-kdhv.onrender.com/api/badges/623cf7aebe3448001693854a
