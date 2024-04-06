@@ -83,7 +83,7 @@ export const remove = async (req, res) => {
   try {
     const id = req.params.id
 
-    await Badge.findByIdAndRemove(id)
+    await Badge.findByIdAndDelete(id)
     res.status(204).end()
   } catch (error) {
     res.status(500).json({ error: 'Internal Server Error' })
